@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="A portfolio website which showcases my work and achievements."
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="stylesheet/styles.css" />
+
+    <title>R.K..</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"
+          ><img src="images/logo.webp" alt="Logo" />
+        </a>
+        <div class="nav_menu">
+          <ul class="nav_list grid">
+            <li class="nav_list" onclick="toggleHeader('home_link')">
+              <a href="#home" class="nav_link home_link active-link"
+                ><i class="uil uil-estate nav_icon"></i>Home</a
+              >
+            </li>
+
+            <li class="nav_list" onclick="toggleHeader('about_link')">
+              <a href="#about" class="nav_link about_link"
+                ><i class="uil uil-user nav_icon"></i>About</a
+              >
+            </li>
+
+            <li class="nav_list" onclick="toggleHeader('skills_link')">
+              <a href="#skills" class="nav_link skills_link"
+                ><i class="uil uil-file-alt nav_icon"></i>Skills</a
+              >
+            </li>
+
+            <li class="nav_list" onclick="toggleHeader('certificate_link')">
+              <a href="#education" class="nav_link certificate_link">
+                <i class="uil uil-medal nav_icon"></i>
+                Education</a
+              >
+            </li>
+
+            <li class="nav_list" onclick="toggleHeader('portfolio_link')">
+              <a href="#portfolio" class="nav_link portfolio_link"
+                ><i class="uil uil-scenery nav_icon"></i>Projects</a
+              >
+            </li>
+
+            <li class="nav_list" onclick="toggleHeader('contact_link')">
+              <a href="#contact" class="nav_link contact_link">
+                <i class="uil uil-message nav_icon"></i>
+                Contact</a
+              >
+            </li>
+          </ul>
+
+          <i class="uil uil-times nav_close"></i>
+        </div>
+
+        <div class="nav_toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a
+                href="https://github.com/kriaaa"
+                class="home_social-icon"
+                target="_blank"
+                rel="noopener"
+                aria-label="Github Profile Link"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/kriaa/"
+                class="home_social-icon"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn Profile Link"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <!-- <a
+                href="https://www.credly.com/users/shyam16102001/badges"
+                class="home_social-icon"
+                target="_blank"
+                rel="noopener"
+                aria-label="Credly Profile Link"
+              >
+                <i class="uil uil-award"></i>
+              </a> -->
+            </div>
+            <div class="home_img"></div>
+            <div class="home_data">
+              <h1 class="home_title">Riya Kaushik</h1>
+              <h3 class="home_subtitle">B.Tech Student</h3>
+              <p class="home_description">
+                A Tech Enthusiast, currently pursuing BTech with expertise in frontend development, 
+                Data Structures and Algorithms (DSA), and C++. 
+                Passionate about leveraging technology to solve real-world problems and eager to explore 
+                new domains and technologies.
+              </p>
+              <a
+                href="assets/cv.pdf"
+                target="_blank"
+                rel="noopener"
+                class="button button--flex cv_download"
+                >Download CV <img src="images/download.svg" alt="Download Logo"
+              /></a>
+            </div>
+          </div>
+          <div class="home_scroll" onclick="toggleHeader('about_link')">
+            <a href="#about" class="home_scroll-button button--flex">
+              <img
+                src="images/scroll_down.svg"
+                alt="Scroll Down Logo"
+                class="home_scroll-button-icon"
+              />
+              <span class="home_scroll-name">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">My Introduction</span>
+
+        <div class="about_container container grid">
+          <img src="images/dpimage.jpg" alt="Profile Pic" class="about_img" />
+          <div class="about_data">
+            <div class="about_info grid">
+              <div class="about_box">
+                <i class="bx bx-calendar-event about_icon"></i>
+                <h3 class="about_title">DOB</h3>
+                <span class="about_subtitle">09.10.2002</span>
+              </div>
+
+              <div class="about_box">
+                <i class="bx bx-map about_icon"></i>
+                <h3 class="about_title">Birth Place</h3>
+                <span class="about_subtitle">Roorkee</span>
+              </div>
+
+              <div class="about_box">
+                <i class="bx bxs-flag-alt about_icon"></i>
+                <h3 class="about_title">Nationality</h3>
+                <span class="about_subtitle">Indian</span>
+              </div>
+            </div>
+
+            <p class="about_description">
+              A Tech Enthusiast who is passionate about exploring and learning
+              new things technologies. Skilled in developing high-quality,
+              responsive, and user-friendly applications using Flutter &
+              specialized in cloud technologies and solutions."
+            </p>
+
+            <a
+              href="assets/cv.pdf"
+              target="_blank"
+              rel="noopener"
+              class="button button--flex cv_download"
+              >Download CV<img src="images/download.svg" alt="Download Logo"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skils section" id="skills">
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle">My Technical level</span>
+
+        <div class="skills_container container grid">
+          <div class="skills_content">
+            <h3 class="skills_title">Programming Language</h3>
+
+            <div class="skills_box">
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">C++</h3>
+                    <span class="skills_level">Advanced</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">C</h3>
+                    <span class="skills_level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">Python</h3>
+                    <span class="skills_level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="skills_title">Web Technologies</h3>
+
+            <div class="skills_box">
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">HTML</h3>
+                    <span class="skills_level">Advanced</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">CSS</h3>
+                    <span class="skills_level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">Javascript</h3>
+                    <span class="skills_level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills_content">
+            
+
+            
+
+                  
+                    <!-- <h3 class="skills_name">Google Cloud Platform</h3>
+                    <span class="skills_level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">Microsoft Azure</h3>
+                    <span class="skills_level">Intermediate</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">Oracle Cloud Infrastructure</h3>
+                    <span class="skills_level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <h3 class="skills_title">Others</h3>
+
+            <div class="skills_box">
+              <div class="skills_group">
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">SQL</h3>
+                    <span class="skills_level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">Git</h3>
+                    <span class="skills_level">Basic</span>
+                  </div>
+                </div>
+
+                <div class="skills_data">
+                  <i class="bx bx-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills_name">Docker</h3>
+                    <span class="skills_level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section" id="education">
+        <h2 class="section_title">Education</h2>
+        <span class="section_subtitle">My personal journey</span>
+
+        <div class="qualification_container container">
+          <div class="qualification_tabs">
+            <div
+              class="qualification_education-button qualification_active button--flex"
+            >
+              <i class="uil uil-graduation-cap qualification_icon"></i>Education
+            </div>
+
+            <div class="qualification_experience-button button--flex">
+              <i class="uil uil-briefcase-alt qualification_icon"></i>Experience
+            </div>
+          </div>
+
+          <div class="qualification_section">
+            <div
+              class="qualification_education-content qualification_content-active"
+            >
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">B.Tech IT</h3>
+                  <span class="qualification_subtitle"
+                    >Banasthali Vidyapith</span
+                  >
+                  <div class="qualification_calender">
+                    <i class="uil uil-calendar-alt"></i>2021 - Present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+
+              <div class="qualification_data">
+                <div></div>
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification_title">Intermediate Education</h3>
+                  <span class="qualification_subtitle"
+                    >St Ann's Senior Secondary School</span
+                  >
+                  <div class="qualification_calender">
+                    <i class="uil uil-calendar-alt"></i>2021
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">SSLC</h3>
+                  <span class="qualification_subtitle"
+                    >Chinmaya Vidyalaya, Tirunelveli</span
+                  >
+                  <div class="qualification_calender">
+                    <i class="uil uil-calendar-alt"></i>2017
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="qualification_experience-content">
+              <div class="qualification_data">
+                <div>
+                  <h3 class="qualification_title">Outreach Manager</h3>
+                  <span class="qualification_subtitle">Social Summer Of Code</span>
+                  <div class="qualification_calender">
+                    <i class="uil uil-calendar-alt"></i>May 2022-June 2022
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification_rounder"></span>
+                  <span class="qualification_line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="portfolio">
+        <h2 class="section_title">Projects</h2>
+        <span class="section_subtitle">My works</span>
+        <div>
+          <div class="work_container container grid">
+            <div class="work_card">
+              <img
+                src="images/amazon.png"
+                alt="MyTenera app image"
+                class="work_img"
+              />
+              <h3 class="work_title">Amazon clone</h3>
+              <a
+                href="https://kriaaa.github.io/Amazon_Clone/"
+                target="_blank"
+                rel="noopener"
+                class="work_button"
+                >Visit my site
+                <i class="bx bx-right-arrow-alt work_button-icon"></i
+              ></a>
+            </div>
+
+            <div class="work_card">
+              <img
+                src="images/tictac.png"
+                alt="Peca app image"
+                class="work_img"
+              />
+              <h3 class="work_title">Tic-Tac-Toe</h3>
+              <a
+                href="https://kriaaa.github.io/tic-tac-game/"
+                target="_blank"
+                rel="noopener"
+                class="work_button"
+                >Visit my site
+                <i class="bx bx-right-arrow-alt work_button-icon"></i
+              ></a>
+            </div>
+
+            <div class="work_card">
+              <img
+                src="images/assignment.png"
+                alt="Headline website image"
+                class="work_img"
+              />
+              <h3 class="work_title">Web_Development_Prac</h3>
+              <a
+                href="https://github.com/kriaaa/web_development_prac"
+                target="_blank"
+                rel="noopener"
+                class="work_button"
+                >Source Code
+                <i class="bx bx-right-arrow-alt work_button-icon"></i
+              ></a>
+            </div>
+
+            <!-- <div class="work_card">
+              <img
+                src="images/task_lock.webp"
+                alt="Task Lock app image"
+                class="work_img"
+              />
+              <h3 class="work_title">Task Lock</h3>
+              <a
+                href="https://github.com/Shyam16102001/Task_Lock"
+                target="_blank"
+                rel="noopener"
+                class="work_button"
+                >Source Code
+                <i class="bx bx-right-arrow-alt work_button-icon"></i
+              ></a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Let us talk</span>
+
+        <div class="contact_container container grid">
+          <div class="contact_content">
+            <div class="contact_info">
+              <!-- 
+              <div class="contact_card">
+                <img
+                  src="images/whatsapp.svg"
+                  class="contact_card-icon"
+                  alt="Whatsapp Icon"
+                />
+
+                <h3 class="contact_card-title">Whatsapp</h3>
+                <span class="contact_card-data">9597117229</span>
+
+                <a
+                  href="https://api.whatsapp.com/send/?phone=919597117229"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact_button"
+                  >Write me
+                  <i class="bx bx-right-arrow-alt contact_button-icon"></i
+                ></a>
+              </div> -->
+              <div class="contact_card">
+                <img
+                  src="images/gmail.svg"
+                  class="contact_card-icon"
+                  alt="Gmail Icon"
+                />
+
+                <h3 class="contact_card-title">Email</h3>
+                <span class="contact_card-data"
+                  >riyakaushik667@gmail.com</span
+                >
+
+                <a
+                  href="mailto:riyakaushik667@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact_button"
+                  >Write me
+                  <i class="bx bx-right-arrow-alt contact_button-icon"></i
+                ></a>
+              </div>
+
+
+              <!-- <div class="contact_card">
+                <img
+                  src="images/telegram.svg"
+                  class="contact_card-icon"
+                  alt="Telegram Icon"
+                />
+                <h3 class="contact_card-title">Telegram</h3>
+                <span class="contact_card-data">@Shyam16102001</span> -->
+
+                <!-- <a
+                  href="https://t.me/Shyam16102001"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact_button"
+                  >Write me
+                  <i class="bx bx-right-arrow-alt contact_button-icon"></i
+                ></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container container">
+        <div class="footer_logo">
+          <img src="images/logo.webp" alt="Logo" class="footer_img" />
+          <h1 class="footer_title"></h1>
+        </div>
+
+        <ul class="footer_list">
+          <li onclick="toggleHeader('about_link')">
+            <a href="#about" class="footer_link">About</a>
+          </li>
+
+          <li onclick="toggleHeader('skills_link')">
+            <a href="#skills" class="footer_link">Skills</a>
+          </li>
+
+          <li onclick="toggleHeader('certificate_link')">
+            <a href="#education" class="footer_link">Education</a>
+          </li>
+
+          <li onclick="toggleHeader('portfolio_link')">
+            <a href="#portfolio" class="footer_link">Projects</a>
+          </li>
+        </ul>
+
+        <div class="footer_social">
+          <div class="footer_social-link">
+            <a
+              href="https://www.linkedin.com/in/kriaa/"
+              class="footer_social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram Profile Link"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/kriaa/"
+              class="footer_social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter Profile Link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kriaa/"
+              class="footer_social-icon"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn Profile Link"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="footer_end">
+        Created with <i class="uil uil-heart"></i> by R.K.
+      </span>
+    </footer>
+
+    <a href="#" class="scrollup">
+      <i
+        class="uil uil-arrow-up scrollup_icon"
+        onclick="toggleHeader('home_link')"
+      ></i>
+    </a>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
